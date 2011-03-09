@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<overlay id="civicrmOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	// This imports our javascript.
+	<script type="application/x-javascript" src="chrome://civicrm/content/civicrmOverlay.js">
+	</script>
+
+	<popup id="emailAddressPopup">
+		<menuitem label="Add contact to CiviCRM"
+			oncommand="add_contact_to_civicrm(document.popupNode);"/>
+	</popup>
+
+</overlay>
+

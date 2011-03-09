@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+
+		<em:id>{a3a9c8bb-20c8-4565-8cd3-448e65200a53}</em:id>
+		<em:name>CiviCRM Thunderbird extension</em:name>
+		<em:version>0.1</em:version>
+		<em:description>Add Thunderbird contacts to CiviCRM, 
+		add email events to existing contacts</em:description>
+		<em:creator>Dave Neary</em:creator>
+		<em:homepageURL>http://www.openwengo.org/civicrm</em:homepageURL>
+		<em:iconURL>chrome://civicrm/skin/civicrm.png</em:iconURL>
+		<em:aboutURL>chrome://civicrm/content/about.xul</em:aboutURL>
+		<em:updateURL>http://www.openwengo.org/civicrm/update.rdf</em:updateURL>
+		<em:file>
+			<Description about="urn:mozilla:extension:file:civicrm.jar">
+				<em:package>content/civicrm/</em:package>
+				<em:skin>skin/classic/civicrm/</em:skin>
+			</Description>
+		</em:file>
+
+		<em:targetApplication>
+			<Description>
+				<!-- Thunderbird -->
+				<em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+				<em:minVersion>1.5.0</em:minVersion>
+				<em:maxVersion>1.5.0.*</em:maxVersion>
+			</Description>
+			<Description>
+				<!-- Seamonkey -->
+				<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+				<em:minVersion>0.1</em:minVersion>
+				<em:maxVersion>1.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+	</Description>
+
+</RDF>

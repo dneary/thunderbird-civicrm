@@ -1,0 +1,25 @@
+<html>
+    <head>
+	<title>Test JavaScript SOAP calls</title>
+    </head>
+    <body>
+
+    <script type="text/javascript">
+    function callDrupal(method,params,callback){
+
+	try {
+	    netscape.security.PrivilegeManager.enablePrivilege("UniversalBrowserRead");
+	} catch (e) {
+	    alert(e);
+	    return false;
+	}
+    }
+    var soapCall = new SOAPCall();
+    soapCall.transportURI = "http://localhost/drupal/modules/civicrm/extern/soap.php";
+
+    //a=1; b=2;c=3;
+    //callDrupal(a,b,c);
+    </script>
+
+    </body>
+</html>
